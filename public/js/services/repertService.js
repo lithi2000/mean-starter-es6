@@ -1,4 +1,4 @@
-class todoService {
+class repertService {
 
     constructor($http) {
         this.$http = $http;
@@ -6,7 +6,7 @@ class todoService {
 
     create(data) {
         return this.$http.post('/api/routerepert', {
-            nom: data.nom , prenom: data.prenom, telephone:data.telephone
+            description: data
         })
     }
 
